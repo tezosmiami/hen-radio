@@ -47,14 +47,14 @@ const Player = () => {
                         <div className={styles.currentTrack}>
                             <span className={styles.trackRow_text}>
                                 <a
-                                    href={`https://hicetnunc.art/objkt/${track.id}`}
+                                    href={`https://hicetnunc.miami/objkt/${track.id}`}
                                     className={styles.trackRow_link}
                                 >#{track.id}</a>
                                 {' '}
                                 {track.title}
                                 <br/>
                                 By <a
-                                href={`https://hicetnunc.art/tz/${track.creator.walletAddress}`}
+                                href={`https://hicetnunc.miami/tz/${track.creator.walletAddress}`}
                                 className={styles.trackRow_link}
                             >{getTrimmedWallet(
                                 track.creator.walletAddress)} {track.creator.name}</a>
