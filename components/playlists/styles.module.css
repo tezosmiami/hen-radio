@@ -11,7 +11,7 @@
 
 .createPlaylist_input {
     padding: 6px 4px;
-    border: 1px solid #E5E5E5;
+    border: 1px solid black;
     margin-bottom: 0;
 }
 
@@ -60,7 +60,7 @@
     width: 100%;
     margin-bottom: 8px;
     padding: 6px 4px;
-    border: 1px solid #E5E5E5;
+    border: 1px solid black;
 }
 
 .filteredPlaylists {
@@ -97,7 +97,7 @@
     width: 100%;
     margin: 0 0 8px 0;
     padding: 0 0 8px 0;
-    border-bottom: 1px solid #E5E5E5;
+    border-bottom: 1px solid black;
     align-items: center;
 }
 
