@@ -28,14 +28,14 @@ const FaqPage = () =>
                 </li>
                 <li>Clicking the link icon will copy the link to the playlist. You can share
                     this link via Twitter or email. For example:
-                    {' '}<a href="https://radio.hicetnunc.miami/playlists/178891,11305,10159,8228">https://hen.radio/playlists/178891,11305,10159,8228</a>
+                    {' '}<a href="https://radio.hicetnunc.miami/playlists/178891,11305,10159,8228">https://radio.hicetnunc.miami/playlists/178891,11305,10159,8228</a>
                 </li>
             </ol>
             <p>A2. To create a playlist with a cover image and visible to everybody you can message our twitter account
                @hen_radio with:</p>
             <ol>
                 <li>The link to the playlist (see above, eg:
-                    {' '}<a href="https://radio.hicetnunc.miami/playlists/178891,11305,10159,8228">https://hen.radio/playlists/178891,11305,10159,8228</a>)
+                    {' '}<a href="https://radio.hicetnunc.miami/playlists/178891,11305,10159,8228">https://radio.hicetnunc.miami/playlists/178891,11305,10159,8228</a>)
                 </li>
                 <li>Title of the playlist</li>
                 <li>Description</li>
@@ -43,6 +43,8 @@ const FaqPage = () =>
                 <li>Cover image in jpeg format</li>
             </ol>
             <p>Playlists are a work in progress, please be patient, we will do our best to include all submissions.</p>
+            <p><strong>Q. What is the difference between this site and the OG hen.radio?</strong></p>
+            <p>A. Only the visual experience for now  - this one is a hub for the Miami Scene</p>
             <p><strong>Q. How can I contribute? How do we contact Hen.radio?</strong><br/>
                 A. <li>Ideas, praises, feedbacks? Here is <a href="https://forms.gle/sajNsHuW9GESQNaFA"><u>the form</u></a>.</li>
                    <li>You can find the HEN Discord from this <a href="https://hicetnunc.miami/about"><u>About page</u></a>, and from there find the hicathon-wg-7-2-hic-radio group.</li>
