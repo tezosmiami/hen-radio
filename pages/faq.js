@@ -28,7 +28,7 @@ const FaqPage = () =>
                 </li>
                 <li>Clicking the link icon will copy the link to the playlist. You can share
                     this link via Twitter or email. For example:
-                    {' '}<a href="https://radio.hicetnunc.miam/playlists/178891,11305,10159,8228">https://hen.radio/playlists/178891,11305,10159,8228</a>
+                    {' '}<a href="https://radio.hicetnunc.miami/playlists/178891,11305,10159,8228">https://hen.radio/playlists/178891,11305,10159,8228</a>
                 </li>
             </ol>
             <p>A2. To create a playlist with a cover image and visible to everybody you can message our twitter account
