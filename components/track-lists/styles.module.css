@@ -9,12 +9,16 @@
 .trackRow_text {
     display: block;
     font-size: 11px;
-    margin-left: 8px;
+    margin: 0 0 0 8px;
 }
 
 .trackRow_link {
     color: #000;
     text-decoration: none;
+}
+
+.trackRow_title {
+    font-weight: 700;
 }
 
 .trackRow_link:active, .trackRow_link:focus, .trackRow_link:visited {
@@ -92,6 +96,7 @@
 .priceText {
     margin: 0;
     font-size: 14px;
+    line-height: 1.1;
 }
 
 .marginTop {
@@ -115,12 +120,18 @@
     display: flex;
     align-items: center;
     flex-wrap: wrap;
+    padding-bottom: 12px;
+}
+
+.searching {
+    display: block;
+    margin: 0 0 0 12px;
+    font-size: 14px;
 }
 
 .searchField {
     padding: 6px 4px;
     border: 1px solid black;
-    margin: 0 0 16px auto;
     width: 100%;
     background-color: #72e072;
 }
@@ -130,6 +141,7 @@
         display: block;
         font-size: 14px;
         margin-left: 12px;
+        line-height: 1.2;
     }
 
     .filterButton {
@@ -139,7 +151,6 @@
     .searchField {
         padding: 6px 4px;
         border: 1px solid black;
-        margin: 0 0 16px auto;
         min-width: 400px;
         width: 33%;
     }

@@ -1,5 +1,31 @@
 export const playlists = [
     {
+        name: "The Mole's King Tomb",
+        curator: '@EternaGnose',
+        description: "The Mole King's Tomb is sc0r3boi's first album. Inspired by game soundtracks, sc0r3boi brings that nostalgic sound with heavy influence of the music of games like Stardew Valley, Runescape and Minecraft.",
+        img: '/images/EternaGnose.gif',
+        slug: 'EternaGnose',
+        tracks: [
+       {"id":474067,"creator":{"walletAddress":"tz1iifginQCWYrZP3gthMUbDdTEKzpM9yc7n","name":"vinylshop","metadata":{"identicon":"ipfs://QmU8cW6AsQGKcpqpJcxXDzws4HurTwHeHUHnm6iYi5ng8q","description":"DON'T TRESPASS "}},"title":"THE MOLE'S KING TOMB - Opening (#01)","src":"https://ipfs.io/ipfs/QmUPpKWssMtHaXWyvtbuwwnVP7qod7p6i5KSLVx2tnBdUf","mimeType":"audio/wav","displayUri":"ipfs://QmTsBQD7VUmyS23NBP1ZqnWFSfeUWD5U4B2mj9S6wB9fTh","tags":[]},
+       {"id":477461,"creator":{"walletAddress":"tz1iifginQCWYrZP3gthMUbDdTEKzpM9yc7n","name":"vinylshop","metadata":{"identicon":"ipfs://QmU8cW6AsQGKcpqpJcxXDzws4HurTwHeHUHnm6iYi5ng8q","description":"DON'T TRESPASS "}},"title":"THE MOLE'S KING TOMB - Good Morning, Peaceful Village (#02)","src":"https://ipfs.io/ipfs/QmXyUbjaD1CFjjgofE1cxiHTv6siqUrkP7mMjs9zJgMDHN","mimeType":"audio/wav","displayUri":"ipfs://QmdkA4CwCV3hKkeYgRhAZuTUogg1JxvsrFznyoCWCmBRQA","tags":[]},
+       {"id":497486,"creator":{"walletAddress":"tz1iifginQCWYrZP3gthMUbDdTEKzpM9yc7n","name":"vinylshop","metadata":{"identicon":"ipfs://QmU8cW6AsQGKcpqpJcxXDzws4HurTwHeHUHnm6iYi5ng8q","description":"DON'T TRESPASS "}},"title":"THE MOLE'S KING TOMB - Agitated Night (#03)","src":"https://infura-ipfs.io/ipfs/QmWgPZxZQgp6jLcti1L2jSCP2yFd8FRqg7C6TWjbC5bnbn","mimeType":"audio/wav","displayUri":"ipfs://QmUy3bAi8pGkLCD1wBn7zc2u1xMACg99PTHyhEQv7YKKhK","tags":[]},
+       {"id":523898,"creator":{"walletAddress":"tz1iifginQCWYrZP3gthMUbDdTEKzpM9yc7n","name":"vinylshop","metadata":{"identicon":"ipfs://QmU8cW6AsQGKcpqpJcxXDzws4HurTwHeHUHnm6iYi5ng8q","description":"DON'T TRESPASS "}},"title":"THE MOLE'S KING TOMB - Where that hole came from? (#04)","src":"https://ipfs.io/ipfs/QmNxE8indLKKJU3qBp5y8Fvox75U5yhd73KTejuUuJzo7x","mimeType":"audio/mpeg","displayUri":"ipfs://QmRYBLvFRgfayBj7TX9ns9jGUyzJBXjPRPWo6tQXuzt8Bn","tags":[]},
+       {"id":545005,"creator":{"walletAddress":"tz1iifginQCWYrZP3gthMUbDdTEKzpM9yc7n","name":"vinylshop","metadata":{"identicon":"ipfs://QmU8cW6AsQGKcpqpJcxXDzws4HurTwHeHUHnm6iYi5ng8q","description":"DON'T TRESPASS "}},"title":"THE MOLE'S KING TOMB - Flooded caverns (#05)","src":"https://ipfs.io/ipfs/Qmbr2C3Cg3f2aFocNKoBPfp5iPWpfcziTuDSZFwveWyhiG","mimeType":"audio/wav","displayUri":"ipfs://QmUhL7FzwHhbtsyUGQjUZMQuaK4eZv1j1yoDySLtPUA91W","tags":[]}
+     ]
+    },
+    {
+        name: 'MindVomit FM',
+        curator: 'Mindvomit',
+        description: "An art Collective based in Atlanta",
+        img: '/images/mindvomit.jpg',
+        slug: 'mindvomit',
+        tracks: [
+            {"id":559593,"creator":{"walletAddress":"tz1Qnn1wT4DFRiQKwRzWe3ZpCYUVEj4EvYcw","name":"mindvomit","metadata":{"identicon":"ipfs://QmeyFijU2RMgRf7iGJdshbjM3YgTpiJGjRmfnpBL7SCSRA","description":"multimedia collective in atlanta founded by @jameecornelia"}},"title":"Autumn View by Jamee Cornelia","src":"https://dweb.link/ipfs/QmUWnSQGYEiboXpEhSMUY5RXuayupuECam9FiVUySFDQMp","mimeType":"audio/wav","displayUri":"ipfs://QmV1dcpciccvTEUfSQQ9GkQ3xVwJ3Z6mSPmKpuLF4Qa9Sc","tags":[]},
+            {"id":564713,"creator":{"walletAddress":"tz1Qnn1wT4DFRiQKwRzWe3ZpCYUVEj4EvYcw","name":"mindvomit","metadata":{"identicon":"ipfs://QmeyFijU2RMgRf7iGJdshbjM3YgTpiJGjRmfnpBL7SCSRA","description":"multimedia collective in atlanta founded by @jameecornelia"}},"title":"dis bitch talk to much by jimmy.","src":"https://cloudflare-ipfs.com/ipfs/QmbbCwQFyDjb7UgAPfXhNR3GH3T3ocwNRkequCDC9GYoyJ","mimeType":"audio/wav","displayUri":"ipfs://Qmc11KbfH6d5Jhwos3LpgYvGhutT5VY1ksvvdiD2nc6yw6","tags":[]},
+            {"id":564856,"creator":{"walletAddress":"tz1Qnn1wT4DFRiQKwRzWe3ZpCYUVEj4EvYcw","name":"mindvomit","metadata":{"identicon":"ipfs://QmeyFijU2RMgRf7iGJdshbjM3YgTpiJGjRmfnpBL7SCSRA","description":"multimedia collective in atlanta founded by @jameecornelia"}},"title":"Summer in Britannia","src":"https://infura-ipfs.io/ipfs/QmNQJhAUXDuX47YZDq8864B8w7V1YYw2fEgEDQBonodcsf","mimeType":"audio/wav","displayUri":"ipfs://QmQGLcoB2hVfVWAKWUqKcs5cQEL3UUddTbbGn4MLBruzxa","tags":[]}
+        ]
+    },
+        {
         name: 'Lucy',
         curator: 'tuneofworms - Brazilian audiovisual artist.',
         description: "Generative music developed in MaxLive for @tuneofworms.",

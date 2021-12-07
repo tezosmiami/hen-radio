@@ -16,7 +16,6 @@
     border: 1px solid black;
 }
 
-
 .button_getObjktData {
     padding: 4px 3px;
 }
@@ -43,6 +42,7 @@
 }
 
 .walletRow_button {
+    font-size: 14px;
 }
 
 .walletRow_avatar {
@@ -70,8 +70,62 @@
     flex-shrink: 0;
 }
 
+.objktActionsBar {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    padding: 4px 0 0 0;
+    min-height: 36px;
+    margin-bottom: 8px;
+}
+
+.objktContainer {
+    display: flex;
+    flex-wrap: wrap;
+    margin-bottom: 32px;
+}
+
+.objktImageHolder {
+    box-sizing: border-box;
+    width: 100%;
+    margin-bottom: 0;
+}
+
+.objktImage {
+    max-width: 600px;
+    max-height: 600px;
+}
+
+.objktMetaRow {
+    box-sizing: border-box;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    min-height: 36px;
+}
+
+.objktPriceText {
+    margin: 0;
+    font-size: 14px;
+}
+
+.playPause {
+    margin-right: 10px;
+}
 
 @media screen and (min-width: 600px) {
+    .objktImageHolder {
+        width: 50%;
+        padding-right: 24px;
+        padding-bottom: 24px;
+    }
+
+    .objktMetaRow {
+        min-height: 36px;
+        padding-left: 24px;
+        border-left: 1px solid #E5E5E5;
+    }
+
     .walletInput {
         max-width: 320px;
     }

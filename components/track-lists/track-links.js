@@ -3,11 +3,12 @@ import Link from 'next/link';
 import { getTrimmedWallet } from '../../utilities/general';
 
 const TrackLinks = ({track, walletAddress, name}) =>
-    <span className={styles.trackRow_text}>
-        <a
-            href={`https://hicetnunc.miami/objkt/${track.id}`}
-            className={styles.trackRow_link}
-        >#{track.id} {track.title}</a>
+    <p className={styles.trackRow_text}>
+        <Link href={`/objkt/${track.id}`}>
+            <a className={styles.trackRow_link}>
+                <span className={styles.trackRow_title}>#{track.id} {track.title}</span>
+            </a>
+        </Link>
         <br/>
         By{' '}
         <span className={styles.trackRow_link}>
@@ -15,7 +16,7 @@ const TrackLinks = ({track, walletAddress, name}) =>
                 {`${name || ''} ${getTrimmedWallet(walletAddress)}`}
             </Link>
         </span>
-    </span>
+    </p>
 ;
 
 export default TrackLinks;
