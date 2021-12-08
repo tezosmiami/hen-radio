@@ -1,17 +1,6 @@
 module.exports = {
     
     reactStrictMode: true,
-    webpack: (config, { isServer }) => {
-        if (!isServer) {
-            // set 'fs' to an empty module on the client to prevent this error on build --> Error: Can't resolve 'fs'
-            config.node = {
-                fs: 'empty'
-            }
-        }
-
-        return config;
-
-}, 
     images: {
         domains: [
             'cloudflare-ipfs.com',
@@ -22,4 +11,15 @@ module.exports = {
             'services.tzkt.io',
         ],
     },
+    webpack: (config, { isServer }) => {
+        if (!isServer) {
+            // set 'fs' to an empty module on the client to prevent this error on build --> Error: Can't resolve 'fs'
+            config.node = {
+                fs: 'empty'
+            }
+        }
+
+        return config;
+
+} 
 };
