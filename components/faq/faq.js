@@ -68,6 +68,8 @@ const Faq = () =>
             </ol>
             <p>Playlists are a work in progress, please be patient, we
                will do our best to include all submissions.</p>
+               <p><strong>Q. What is the difference between this site and the OG hen.radio?</strong></p>
+            <p>A. Only the visual experience for now  - this one is a hub for the Miami Scene</p>
             <p><strong>Q. How can I contribute? How do we contact
                        Hen.radio?</strong></p>
             <p>A.</p>
