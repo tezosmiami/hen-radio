@@ -10,4 +10,8 @@ module.exports = {
             'services.tzkt.io',
         ],
     },
+    webpack: (config, { webpack }) => {
+        config.plugins.push(new webpack.IgnorePlugin({
+            resourceRegExp: /^electron$/
+        }),);},
 };
