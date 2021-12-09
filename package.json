@@ -2,6 +2,7 @@
   "name": "hen-radio-next",
   "version": "0.1.0",
   "private": true,
+  
   "browser": {
     "http": false,
     "https": false,
@@ -35,7 +36,7 @@
   "devDependencies": {
     "eslint": "7.30.0",
     "eslint-config-next": "11.0.1"
-  },
+  }
 
   
 }
