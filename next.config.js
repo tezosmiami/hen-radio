@@ -18,7 +18,8 @@ module.exports = {
                 https: false,
                 http:false,
                 os: false,
-                stream: false
+                stream: false,
+                path: false
             }
         }
 
