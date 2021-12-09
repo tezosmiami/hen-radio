@@ -15,7 +15,8 @@ module.exports = {
         if (!isServer) {
             config.resolve.fallback = {
                 fs: false,
-                https: false
+                https: false,
+                http:false
             }
         }
 
