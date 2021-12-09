@@ -14,7 +14,6 @@ module.exports = {
     webpack: (config, { isServer }) => {
         if (!isServer) {
             config.resolve.fallback = {
-                https: false,
                 fs: false
             }
         }
