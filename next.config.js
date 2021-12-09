@@ -1,7 +1,6 @@
 module.exports = {
     
     reactStrictMode: true,
-    target: 'node',
     images: {
         domains: [
             'cloudflare-ipfs.com',
