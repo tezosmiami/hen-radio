@@ -21,6 +21,7 @@ module.exports = {
                 stream: false,
                 path: false,
                 crypto: false
+                electron: false,
             }
         }
 
