@@ -11,20 +11,5 @@ module.exports = {
             'services.tzkt.io',
         ],
     },
-    webpack: (config, { isServer }) => {
-        if (!isServer) {
-            config.resolve.fallback = {
-                fs: false,
-                https: false,
-                http:false,
-                os: false,
-                stream: false,
-                path: false,
-                crypto: false
-
-            }
-        }
-
-        return config;
-    }
+   
         };

@@ -2,12 +2,7 @@
   "name": "hen-radio-next",
   "version": "0.1.0",
   "private": true,
-  "browser": {
-    "http": false,
-    "https": false,
-    "os": false,
-    "fs": false
-  },
+  
   "scripts": {
     "dev": "next dev",
     "build": "next build",

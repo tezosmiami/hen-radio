@@ -12,7 +12,7 @@ const network = {
 let wallet
 if (process.browser) {
     wallet = new BeaconWallet({
-        name: 'radio.hicetnunc.miami',
+        name: 'hen.radio',
         preferredNetwork: 'mainnet'
     });
 
