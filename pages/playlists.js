@@ -6,15 +6,15 @@ import { playlists } from '../playlists/playlists';
 const PlaylistsPage = () => {
     const title = 'Listen to Hen Radio';
     const description = 'Hic et Nunc NFT audio player and playlists';
-    const image = 'https://hen.radio/images/hen-radio-logo-social.png';
-    const url = 'https://hen.radio/playlists';
+    const image = 'https://radio.hicetnunc.miami/images/hen-radio-logo-social.png';
+    const url = 'https://radio.hicetnunc.miami/playlists';
 
     return <>
         <Head>
             <meta charSet="utf-8"/>
             <title>Playlists | Hen Radio | NFT Music Player</title>
             <meta name="description" content={description}/>
-            <link rel="canonical" href={`http://hen.radio/playlists`}/>
+            <link rel="canonical" href={`http://radio.hicetnunc.miami/playlists`}/>
             <meta name="twitter:card" content="summary"/>
             <meta name="twitter:site" content="@hen_radio"/>
             <meta name="twitter:creator" content="@hen_radio"/>

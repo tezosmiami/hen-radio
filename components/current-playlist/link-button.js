@@ -11,8 +11,8 @@ const LinkButton = ({tracks}) => {
     const handleCopyShareLink = async() => {
         const trackIds = tracks.map(t => t.id).join(',');
         const link = slug
-            ? `https://hen.radio/curated/${slug}`
-            : `https://hen.radio/playlists/${trackIds}`
+            ? `https://radio.hicetnunc.miami/curated/${slug}`
+            : `https://radio.hicetnunc.miami/playlists/${trackIds}`
         await navigator.clipboard
             .writeText(link);
         setShowMessage(true);

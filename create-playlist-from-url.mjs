@@ -1,6 +1,6 @@
 import { gql, request } from 'graphql-request';
 
-const url = 'https://hen.radio/playlists/197596,196064,193262,190830,178113,189702,162790'
+const url = 'https://radio.hicetnunc.miami/playlists/197596,196064,193262,190830,178113,189702,162790'
 
 const extractIdsFromUrl = (url) => url.match(/\d+/g).map(d => Number(d));
 const objktIds = extractIdsFromUrl(url);

@@ -3,7 +3,7 @@ User-agent: *
 Allow: /
 
 # Host
-Host: https://hen.radio
+Host: https://radio.hicetnunc.miami
 
 # Sitemaps
-Sitemap: https://hen.radio/sitemap.xml
+Sitemap: https://radio.hicetnunc.miami/sitemap.xml

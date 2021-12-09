@@ -1,5 +1,5 @@
 module.exports = {
-    siteUrl: 'https://hen.radio',
+    siteUrl: 'https://radio.hicetnunc.miami',
     generateRobotsTxt: true,
     sitemapSize: 5000,
 }
