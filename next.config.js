@@ -14,7 +14,7 @@ module.exports = {
     webpack: (config, { isServer }) => {
         if (!isServer) {
             config.resolve.fallback = {
-                "http": require.resolve("stream-http"),
+                https: true,
                 fs: false
             }
         }
