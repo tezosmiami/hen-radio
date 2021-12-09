@@ -1,6 +1,7 @@
 module.exports = {
     
     reactStrictMode: true,
+    target: 'node',
     images: {
         domains: [
             'cloudflare-ipfs.com',
@@ -11,13 +12,5 @@ module.exports = {
             'services.tzkt.io',
         ],
     },
-    webpack: (config, { isServer }) => {
-        if (!isServer) {
-            config.resolve.fallback = {
-                fs: false
-            }
-        }
-
-        return config;
-    }
+   
         };
