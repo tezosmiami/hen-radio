@@ -16,7 +16,8 @@ module.exports = {
             config.resolve.fallback = {
                 fs: false,
                 https: false,
-                http:false
+                http:false,
+                os: false
             }
         }
 
