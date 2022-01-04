@@ -113,6 +113,16 @@
     margin-right: 10px;
 }
 
+.button {
+    border: none;
+}
+.button_shuffle svg{ 
+    height: 18px;
+    width: 18px;
+    margin-bottom: 8px;
+    margin-left: 16px;
+}
+
 @media screen and (min-width: 600px) {
     .objktImageHolder {
         width: 50%;
@@ -156,14 +166,4 @@
         font-size: 14px;
     }
 
-    .button {
-        border: none;
-    }
-    .button_shuffle svg{ 
-        height: 18px;
-        width: 18px;
-        margin-bottom: 8px;
-        margin-left: 18px;
-      
-    }
 }
