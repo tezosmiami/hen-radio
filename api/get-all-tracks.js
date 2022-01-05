@@ -40,7 +40,7 @@ const query = gql`
     }
 `;
 
-const getAllTracks = async(page = 1, limit) => {
+const getAllTracks = async(page = 1, limit = 250) => {
     const offset = Math.max((page - 1) * limit, 0);
     const resp = await request(
         'https://api.hicdex.com/v1/graphql',

@@ -10,16 +10,18 @@ import usePlaylist from '../../hooks/use-playlist';
 import ShuffleIcon from '../icons/shuffle-icon';
 import ShuffleDisableIcon from '../icons/shuffle-disable-icon';
 import styles from './styles.module.css';
+import {useRouter} from 'next/router';
 
-const AllTracksView = ({swrKey, fetcher}) => {
-    const [shuffle, setShuffle] = useState();
+const AllTracksView = ({swrKey,fetcher}) => {
+    const [shuffle, setShuffle] = useState(false);
     const {data} = useSWR(swrKey, fetcher(shuffle), {use: [serialise]});
     const {tracks, objkt} = data;
     const {setTracks} = usePlaylist();
     const {controls} = useRadio();
     const {trackState} = useTrack();        
     const {mutate} = useSWRConfig();
-
+    console.log(data);
+    console.log(shuffle)
     const handleClick = () => {setShuffle(!shuffle);
         mutate(swrKey, fetcher(!shuffle), {use: [serialise]})}
     if(audio) {
@@ -37,15 +39,16 @@ const AllTracksView = ({swrKey, fetcher}) => {
         }
         // eslint-disable-next-line react-hooks/exhaustive-deps
     }, [tracks]);
-
+ 
+const router= useRouter();
 
     if(!tracks) return <p>Loading...</p>;
     return (
         <>
             <SearchBar/>
-            <button onClick={handleClick} className={`${styles.button_shuffle} ${styles.button}`}>
+            {router.pathname==='/' &&<button onClick={handleClick} className={`${styles.button_shuffle} ${styles.button}`}>
                 {shuffle ? <ShuffleDisableIcon/> : <ShuffleIcon />}
-            </button>
+            </button>}
             <TrackList tracks={tracks}/>
         </>
     );
