@@ -8,7 +8,7 @@ export const getServerSideProps = async({params, query}) => {
     const {page} = params;
     const search = query?.search || null;
 
-    const data = await allTracksFetcher(false,allTracksApi, page, search);
+    const data = await allTracksFetcher(false, allTracksApi, page, search);
     const swrKey = JSON.stringify([allTracksApi, page, search]);
     return {
         props: {

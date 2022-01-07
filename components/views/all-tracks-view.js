@@ -14,16 +14,18 @@ import {useRouter} from 'next/router';
 
 const AllTracksView = ({swrKey,fetcher}) => {
     const [shuffle, setShuffle] = useState(false);
-    const {data} = useSWR(swrKey, fetcher(shuffle), {use: [serialise]});
+    const {data} = useSWR(swrKey, fetcher(shuffle), {use: [serialise],  refreshInterval: !shuffle ? 1000 * 60 * 15 : 0 });
     const {tracks, objkt} = data;
     const {setTracks} = usePlaylist();
     const {controls} = useRadio();
     const {trackState} = useTrack();        
     const {mutate} = useSWRConfig();
-    console.log(data);
-    console.log(shuffle)
-    const handleClick = () => {setShuffle(!shuffle);
-        mutate(swrKey, fetcher(!shuffle), {use: [serialise]})}
+
+    const handleClick = () => {
+            setShuffle(!shuffle);
+            mutate(swrKey, fetcher(!shuffle), {use: [serialise]})
+        }
+
     if(audio) {
         audio.onended = () => {
             if(!tracks.length) return;
@@ -32,11 +34,13 @@ const AllTracksView = ({swrKey,fetcher}) => {
     }
     useEffect(() => {
         setTracks(tracks);
-        if(trackState.currentTrack === null) {
-            const foundIndex = tracks.findIndex(t => t.id === Number(objkt));
-            controls.initialiseTrack(tracks)(
-                foundIndex !== -1 ? foundIndex : 0)();
-        }
+        // if(trackState.currentTrack === null ) {
+        !shuffle && controls.pause()
+        const foundIndex = tracks.findIndex(t => t.id === Number(objkt));
+        controls.initialiseTrack(tracks)(
+            foundIndex !== -1 ? foundIndex : 0)();
+            shuffle && audio.play()
+        // }
         // eslint-disable-next-line react-hooks/exhaustive-deps
     }, [tracks]);
  

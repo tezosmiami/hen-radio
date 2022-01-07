@@ -35,7 +35,6 @@ const allTracksFetcher= async(shuffle, url = allTracksApi, page = 1, search = ''
     );
 
     if (shuffle===true) {tracks = shuffleTracks(tracks)};
-    console.log(tracks)
     return {tracks, page, search, total, limit};
 };
 
