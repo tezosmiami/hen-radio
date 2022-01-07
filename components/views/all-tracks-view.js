@@ -34,13 +34,13 @@ const AllTracksView = ({swrKey,fetcher}) => {
     }
     useEffect(() => {
         setTracks(tracks);
-        // if(trackState.currentTrack === null ) {
-        !shuffle && controls.pause()
+        if(trackState.currentTrack === null || shuffle ) {
+      
         const foundIndex = tracks.findIndex(t => t.id === Number(objkt));
         controls.initialiseTrack(tracks)(
             foundIndex !== -1 ? foundIndex : 0)();
             shuffle && audio.play()
-        // }
+        }
         // eslint-disable-next-line react-hooks/exhaustive-deps
     }, [tracks]);
  
