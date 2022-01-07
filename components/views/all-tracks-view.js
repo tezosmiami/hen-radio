@@ -39,7 +39,7 @@ const AllTracksView = ({swrKey,fetcher}) => {
         const foundIndex = tracks.findIndex(t => t.id === Number(objkt));
         controls.initialiseTrack(tracks)(
             foundIndex !== -1 ? foundIndex : 0)();
-            shuffle && audio.play()
+            shuffle && audio.play() && controls.play();
         }
         // eslint-disable-next-line react-hooks/exhaustive-deps
     }, [tracks]);
