@@ -7,11 +7,19 @@ import filterBannedTracks from '../utilities/filter-banned-tracks';
 
 export const allTracksApi = '/api/tracks';
 
-export const limit = 250;
 
-const allTracksFetcher = async(url = allTracksApi, page = 1, search = '') => {
+function shuffleTracks(a) {
+    for (let i = a.length - 1; i > 0; i--) {
+      const j = Math.floor(Math.random() * (i + 1));
+      [a[i], a[j]] = [a[j], a[i]];
+    }
+    return a;
+  }
+  
+
+const allTracksFetcher= async(shuffle, url = allTracksApi, page = 1, search = '') => {
     page = page > 0 ? page : 1;
-
+    const limit = shuffle === true ? null : 250;
     const [allTracks, total, blockedObjkts, blockedWallets] = await Promise.all(
         [
             !search ? getAllTracks(page, limit) : searchAllTracks(page, limit, search),
@@ -20,11 +28,13 @@ const allTracksFetcher = async(url = allTracksApi, page = 1, search = '') => {
             getBlockedWallets()
         ]);
 
-    const tracks = filterBannedTracks(
+    var tracks = filterBannedTracks(
         allTracks,
         blockedWallets,
         blockedObjkts
     );
+
+    if (shuffle===true) {tracks = shuffleTracks(tracks)};
     return {tracks, page, search, total, limit};
 };
 

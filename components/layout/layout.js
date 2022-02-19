@@ -8,6 +8,7 @@ import {getTrimmedWallet} from '../../utilities/general';
 
 const Layout = ({params, children}) => {
     const {auth, sync, unsync} = useTezos();
+
     return (
         <View params={params}>
             <div className={styles.headerBar}>
@@ -31,6 +32,9 @@ const Layout = ({params, children}) => {
                     </span>
                     <span className={styles.navBar_link}>
                         <Link href={'/faq'}>FAQ</Link>
+                    </span>
+                    <span className={styles.navBar_link}>
+                        <Link href={'https://live.hen.radio'}>Live</Link>
                     </span>
                     {auth && <span className={styles.navBar_link}>
                         <Link href={'/mint'}>Mint</Link>

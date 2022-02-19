@@ -26,8 +26,7 @@ const AllTracksPage = ({fallback, swrKey}) => {
     return (
         <SWRConfig
             value={{
-                fallback,
-                refreshInterval: 1000 * 60 * 15
+                fallback
             }}
         >
             <Head>

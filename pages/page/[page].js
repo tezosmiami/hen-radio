@@ -8,7 +8,7 @@ export const getServerSideProps = async({params, query}) => {
     const {page} = params;
     const search = query?.search || null;
 
-    const data = await allTracksFetcher(allTracksApi, page, search);
+    const data = await allTracksFetcher(false, allTracksApi, page, search);
     const swrKey = JSON.stringify([allTracksApi, page, search]);
     return {
         props: {
@@ -31,7 +31,8 @@ const Page = ({page, search, swrKey, fallback}) => {
     return (
         <SWRConfig value={{
             fallback,
-            refreshInterval: 1000 * 60 * 15
+            refreshInterval: 1000 * 60 * 15,
+            revalidateIfStale: false
         }}>
             <Head>
                 <meta charSet="utf-8"/>
