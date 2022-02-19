@@ -19,15 +19,15 @@ const PlaylistsPage = ({slug}) => {
     const selectedPlaylist = playlists.find(p => p.slug === slug);
     const title = `${selectedPlaylist.name} | Hen Radio`;
     const description = selectedPlaylist.description || 'Curated playlist for Hen Radio';
-    const image = 'https://radio.hicetnunc.miami/images/hen-radio-logo-social.png';
-    const url = `https://radio.hicetnunc.miami/curated/${selectedPlaylist.slug}`;
+    const image = 'https://hen.radio/images/hen-radio-logo-social.png';
+    const url = `https://hen.radio/curated/${selectedPlaylist.slug}`;
 
     return <>
         <Head>
             <meta charSet="utf-8"/>
             <title>{title}</title>
             <meta name="description" content={description}/>
-            <link rel="canonical" href={`http://radio.hicetnunc.miami/playlists`}/>
+            <link rel="canonical" href={`http://hen.radio/playlists`}/>
             <meta name="twitter:card" content="summary"/>
             <meta name="twitter:site" content="@hen_radio"/>
             <meta name="twitter:creator" content="@hen_radio"/>

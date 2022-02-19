@@ -1,16 +1,16 @@
-import WalletView from '../../components/views/wallet-view';
+import WalletView from '../../../components/views/wallet-view';
 import Head from 'next/head';
-import getWalletsWithAudio from '../../api/get-wallets-with-audio';
-import getObjktsCreatedBy from '../../api/get-objkts-created-by';
-import WalletTrackList from '../../components/track-lists/wallet-track-list';
-import getObjktsOwnedBy from '../../api/get-objkts-owned-by';
+import getWalletsWithAudio from '../../../api/get-wallets-with-audio';
+import getObjktsCreatedBy from '../../../api/get-objkts-created-by';
+import WalletTrackList from '../../../components/track-lists/wallet-track-list';
+import getObjktsOwnedBy from '../../../api/get-objkts-owned-by';
 import {useRouter} from 'next/router';
-import {getBlockedTracks, getBlockedWallets} from '../../api/get-blocked-lists';
-import getTzProfileClaims from '../../api/get-tzprofile-claims';
-import getProfile from '../../api/get-profile';
+import {getBlockedTracks, getBlockedWallets} from '../../../api/get-blocked-lists';
+import getTzProfileClaims from '../../../api/get-tzprofile-claims';
+import getProfile from '../../../api/get-profile';
 import Image from 'next/image';
-import Profile from '../../components/profile';
-import {getIpfsUrl} from '../../utilities/general';
+import Profile from '../../../components/profile';
+import {getIpfsUrl} from '../../../utilities/general';
 
 export const getServerSideProps = async({params}) => {
     const {walletAddress} = params;

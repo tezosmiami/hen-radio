@@ -1,14 +1,15 @@
-import AllTracksView from '../components/views/all-tracks-view';
 import Head from 'next/head';
+import AllTracksView from '../../../components/views/all-tracks-view';
+import playlistFetcher, {playlistApi} from '../../../fetchers/playlist-fetcher';
 import {SWRConfig} from 'swr';
-import allTracksFetcher, {allTracksApi} from '../fetchers/all-tracks-fetcher';
-import Pagination from '../components/pagination';
 
-export const getServerSideProps = async() => {
-    const data = await allTracksFetcher();
-    const swrKey = JSON.stringify([allTracksApi, 1, null]);
+export const getServerSideProps = async({params}) => {
+    const {objktIds: objktIdStr} = params;
+    const data = await playlistFetcher(playlistApi, objktIdStr);
+    const swrKey = JSON.stringify([playlistApi, objktIdStr]);
     return {
         props: {
+            objktIdStr,
             swrKey,
             fallback: {
                 [swrKey]: data
@@ -17,12 +18,11 @@ export const getServerSideProps = async() => {
     };
 };
 
-const AllTracksPage = ({fallback, swrKey}) => {
+const PlaylistsPage = ({fallback, swrKey, objktIdStr}) => {
     const title = 'Listen to Hen Radio';
-    const description = 'Hic et Nunc NFT audio player, all tracks';
+    const description = 'Hic et Nunc NFT audio player and playlists';
+    const url = 'https://hen.radio/playlists';
     const image = 'https://hen.radio/images/hen-radio-logo-social.png';
-    const url = 'https://hen.radio';
-
     return (
         <SWRConfig
             value={{
@@ -32,9 +32,14 @@ const AllTracksPage = ({fallback, swrKey}) => {
         >
             <Head>
                 <meta charSet="utf-8"/>
-                <title>Hen Radio | NFT Music Player</title>
+                <title>Playlist | Hen Radio |
+                       NFT
+                       Music Player</title>
                 <meta name="description" content={description}/>
-                <link rel="canonical" href={`http://hen.radio`}/>
+                <link
+                    rel="canonical"
+                    href={`http://hen.radio/playlists/${objktIdStr}`}
+                />
                 <meta name="twitter:card" content="summary"/>
                 <meta name="twitter:site" content="@hen_radio"/>
                 <meta name="twitter:creator" content="@hen_radio"/>
@@ -64,12 +69,9 @@ const AllTracksPage = ({fallback, swrKey}) => {
                     content="initial-scale=1.0, width=device-width"
                 />
             </Head>
-            <AllTracksView swrKey={swrKey} fetcher={allTracksFetcher}/>
-            <Pagination page={1} search={null}/>
+            <AllTracksView swrKey={swrKey} fetcher={playlistFetcher}/>
         </SWRConfig>
     );
 };
 
-export default AllTracksPage;
-
-
+export default PlaylistsPage;

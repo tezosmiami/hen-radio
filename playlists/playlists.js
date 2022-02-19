@@ -59,9 +59,9 @@ export const playlists = [
             { "id": 472403, "creator": { "walletAddress": "tz1i2tQZSMop7dR3u3qnag8DBg5qBBM7qQxW", "name": "os_metasambas", "metadata": {} }, "title": "onda esquisita/ weird vibes", "src": "https://cloudflare-ipfs.com/ipfs/QmQAUvdPvkBKau7t1VF659EZFTfPY1DGDDm6aG2PGHTPgk", "mimeType": "audio/wav", "displayUri": "ipfs://QmWKevXstw9K2Be2GvuFc6MaCUUoGAdctCf15nbxpZ1Y64", "tags": [] }]
     },
     {
-        name: 'radio.hicetnunc.miami Halloween',
+        name: 'hen.radio Halloween',
         curator: '@hen_radio',
-        description: 'Halloween 2021 radio.hicetnunc.miami playlist',
+        description: 'Halloween 2021 hen.radio playlist',
         img: '/images/Halloween2021_Playlist_Cover_256.gif',
         slug: 'hen_radio_halloween2021',
         tracks: [
@@ -86,9 +86,9 @@ export const playlists = [
         ]
     },
     {
-        name: 'radio.hicetnunc.miami jingle #1',
+        name: 'hen.radio jingle #1',
         curator: '@hen_radio',
-        description: 'A playlist of music artists having contributed to radio.hicetnunc.miami jingle #1',
+        description: 'A playlist of music artists having contributed to hen.radio jingle #1',
         img: '/images/V5MT_HEN_Radio_180X180.gif',
         slug: 'hen_radio',
         tracks: [
@@ -633,7 +633,7 @@ export const playlists = [
     {
         name: 'Hicathon Dev',
         curator: 'HEN Radio',
-        description: 'The tracks that made radio.hicetnunc.miami, listened to on repeat for hackday development',
+        description: 'The tracks that made hen.radio, listened to on repeat for hackday development',
         img: '/images/playlist_cover_0.png',
         slug: 'hicathon-dev',
         tracks: [
