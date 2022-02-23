@@ -28,6 +28,11 @@ const Faq = () =>
                 See our presentation <a href="https://docs.google.com/presentation/d/1t7zirrVZ0wHu0Fx6HJeGZzsDzS0s5n4TEwT9QdC-by4/edit?usp=sharing">
                     <u><strong>here</strong></u></a>.
             </p>
+            <p className={styles.faqQuestion}><strong>Q. When is the next event?</strong></p>
+            <p className={styles.faqAnswer}>A. The calendar for the next event can be found <a href="https://henradio.notion.site/67705532e9444c19981ed891090de5de?v=7c50a26c69ce4f1fa58cfaf2d41383ce">
+                    <u><strong>here</strong></u></a>.
+                    Join us in <a href='https://discord.gg/gj7U6r96aF'><u><strong>Discord</strong></u></a> if you would like to create your own event.
+            </p>
             <p className={styles.faqQuestion}><strong>Q. How does the minting work on hen radio?</strong></p>
             <p className={styles.faqAnswer}>A. Sync your wallet using the <strong>sync</strong> button on the top right
                 corner. A <strong>Mint</strong> button will then appear.
@@ -38,7 +43,7 @@ const Faq = () =>
             </p>
             <p className={styles.faqAnswer}>A. Yes, everything on hen.radio will also be available on
                 the main Hic et Nunc site. Mints, collects and swaps are all made on the Hic et Nunc contracts.</p>
-            <p className={styles.faqQuestion}><strong>Q. if I mint on @objktcom, will it appear on hen.radio ?</strong>
+            <p className={styles.faqQuestion}><strong>Q. If I mint on @objktcom, will it appear on hen.radio ?</strong>
             </p>
             <p className={styles.faqAnswer}>A. Only music minted on the Hen contract will appear on hen.radio. Collections in @objktcom have their own contract, and will not appear on hen.radio</p>
             <p className={styles.faqQuestion}><strong>Q. Is there an app?</strong></p>
@@ -88,7 +93,7 @@ const Faq = () =>
                 will do our best to include all submissions. If we are not yet following you on Twitter, come and say hi in Discord.</p>
             <p className={styles.faqQuestion}><strong>Q. How can I contribute? How do we contact
                 Hen.radio?</strong></p>
-            <p className={styles.faqAnswer}>A. The best place to engage with us is through the <a href='https://discord.gg/gj7U6r96aF'>Discord</a>, or find our social details below.
+            <p className={styles.faqAnswer}>A. The best place to engage with us is through the <a href='https://discord.gg/gj7U6r96aF'>Discord</a>, find our social details below.
             </p>
         </div>
     </>;

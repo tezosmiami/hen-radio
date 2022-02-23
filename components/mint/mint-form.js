@@ -12,7 +12,7 @@ const ALLOWED_AUDIO_TYPES = [
     'audio/wav',
     'audio/ogg',
     'audio/mpeg',
-    'audio/flac'
+    "audio/x-wav"
 ];
 const ALLOWED_IMAGE_TYPES = [
     'image/png',
@@ -188,7 +188,7 @@ const MintForm = ({handleSubmit, mintPayload}) => {
                                 className={styles.label}
                                 htmlFor="audio"
                             >
-                                Upload audio (mp3, ogg, wav, flac, max 100MB)
+                                Upload audio (mp3, ogg, wav, max 100MB)
                             </label>
                             <input
                                 className={styles.input}
